@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color:red
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color:var(--color);
+            text-align: center;
+            transition: 2s ease-in-out;
+            box-shadow: 10px 10px 5px 5px gray;
+        }
+        .box:hover{
+            width: 400px;
+        }
+        .inbar::before{
+            content: 'java';
+            position: absolute;
+            width: 80%;
+            background: red;
+            left: 0;
+            top: 0;
+        }
+        .inbar{
+           background: gray;
+            width: 100%;
+            height: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- <video height="500" width="900" controls>
+        <source src="./video11.mp4" type="video/mp4">
+        <track src="./video1.mp4" kind="subtitles" srclang="en" label="English">
+        play video
+    </video>
+    <br>
+    <audio src="./audio1.mp3" controls>play audio</audio> -->
+    <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" height="500" width="900"></iframe> -->
+     <div class="box">
+        Box 
+    </div>
+    <br><br><br>
+    <p>this is a para</p>
+    <p>this is a para2</p>
+    <div class="bar">
+        <div class="info">
+            java
+        </div>
+        <div class="inbar">
+
+        </div>
+    </div>
+</body>
+</html>
